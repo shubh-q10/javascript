@@ -6,4 +6,11 @@ let isLoggedIn = false  //boolean yes or no
 
 //null => standalone value which means noting / not zero
 // undefined => no value has been assigned
+// symbol => unique
+
+
+// object 
+
+console.log(typeof "honey");
+
 
