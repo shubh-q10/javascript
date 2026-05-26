@@ -3,6 +3,8 @@ const repoCount = 50
 
 console.log(name + repoCount + " Values"); //this is very old way to concatinate strings
 
+
+//we will use backticks `` which is modern way to write code
 console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String('hites-hhc')
