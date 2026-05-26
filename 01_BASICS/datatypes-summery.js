@@ -7,7 +7,6 @@
 const name = "shuham"
 const fname = "Shubh"
 
-
 //NUMBER
 const value = 100
 const scoreValue = 100.3
@@ -20,7 +19,6 @@ const outsideTemp = null // its empty not zero
 
 //UNDEFINED
 let userEmail; // its undefined
-
 
 //SYMBOL
 const id = Symbol('123')
@@ -50,3 +48,9 @@ function sum(a, b) {
 }
 
 console.log(sum(3, 5));
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
