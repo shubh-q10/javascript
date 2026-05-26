@@ -39,6 +39,20 @@ console.log("1" + 2 + 2);
 console.log(1 + 2 + "2");
 
 
+console.log(true);
+
+let num1 , num2, num3
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter);
+
+
+//link to study about prefix and postfix in javascript
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+
 
 
 
