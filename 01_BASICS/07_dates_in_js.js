@@ -30,6 +30,11 @@ console.log(newDate.getDay());
 console.log(newDate.getFullYear());
 console.log(newDate.getMonth());
 
+console.log(`Right now the year is ${newDate.getFullYear()}, month is ${newDate.getMonth()} and Day is ${newDate.getDay()}`);
+
+newDate.toLocaleString('default', {
+    weekday: "long",
+})
 
 
 
