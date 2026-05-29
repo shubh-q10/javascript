@@ -9,3 +9,10 @@ const course = {
 const {courseinstructor: instructor} = course //here you can get the value of course.courseinstructor by just using instructor
 console.log(instructor);
 
+//json: javascript object notation
+
+{
+    name: "shubh",
+    class: 56,
+    rollno: "445d"
+}
