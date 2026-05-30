@@ -39,3 +39,26 @@ function handleobject(anyobject) {
 
 handleobject(user)
 
+
+//you can directly pass the object in function also
+
+handleobject({
+    name: "shubh",
+    price: 900
+})
+
+
+// how to pass an array in a function
+
+const myNewarray = [678, 890, 456, 33, 56]
+
+function arraypass(anyarray) {
+    console.log(`the second value of an array is ${anyarray[1]}`);
+    
+}
+
+arraypass(myNewarray)
+
+// you can directly pass an array in function
+
+arraypass([45, 670, 8, 90, "hereo"])
