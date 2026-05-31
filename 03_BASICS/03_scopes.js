@@ -48,4 +48,13 @@ if (true) {
 console.log(username);
 
 
+//++++++++++++++++++++++++++++interesting++++++++++++++++++++++++++++
+
+function addone(num) {
+    return num + 1
+
+}
+
+addone(5)
+
 
