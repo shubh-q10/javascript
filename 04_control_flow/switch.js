@@ -7,7 +7,7 @@
 //         break;
 // }
 
-// here key is month and case is 3 ( i mean true case)
+// here month is key and case is 3 ( i mean true case)
 
 
 const month = 3
