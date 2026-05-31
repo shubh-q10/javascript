@@ -48,3 +48,13 @@ const arrowfunction = () => {
 }
 
 arrowfunction()
+
+
+// some examples of arrow function
+
+const mulitplytwonum = (num1, num2) => {
+    return num1 * num2
+
+}
+
+console.log(mulitplytwonum(45, 69));
