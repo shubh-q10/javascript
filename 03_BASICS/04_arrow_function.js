@@ -58,3 +58,34 @@ const mulitplytwonum = (num1, num2) => {
 }
 
 console.log(mulitplytwonum(45, 69));
+
+
+// other ways to write arrow function( implicit return) where you don not use {} and return keyword
+
+const addTwo = (num01, num02) => num01 + num02 
+const addTwo1 = (num1, num2) => (num1 + num2)
+
+// you can also return object in arrow function using parenthesis
+
+const addTwo2 = (num, num1) => ({username: "shubham"}) // if you don't put object inside the parenthesis then it will return undefined
+
+
+console.log(addTwo(89, 90));
+console.log(addTwo1(56, 43));
+console.log(addTwo2(8, 8));
+
+
+
+//using arrow function on array
+
+const myarray = [2, 5, 6, 78]
+
+myarray.forEach(num => console.log(num*6));
+
+
+
+
+
+
+
+
