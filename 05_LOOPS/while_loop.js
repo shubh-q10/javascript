@@ -6,3 +6,15 @@ while (index > 60) {
     
     
 }
+
+//FOR LOOP ON AN ARRAY
+
+let myArray = ['flase', 'batman', 'superman']
+let arr = 0
+while (arr < myArray.length) {
+
+    console.log(`Value is ${myArray[arr]}`);
+    arr = arr + 1
+    
+    
+}
