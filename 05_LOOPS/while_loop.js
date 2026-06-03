@@ -7,14 +7,15 @@ while (index > 60) {
     
 }
 
-//FOR LOOP ON AN ARRAY
+//WHILE LOOP ON AN ARRAY
 
 let myArray = ['flase', 'batman', 'superman']
 let arr = 0
 while (arr < myArray.length) {
 
-    console.log(`Value is ${myArray[arr]}`);
+    console.log(`Value is at ${arr} is ${myArray[arr]} in myArray`);
     arr = arr + 1
     
     
 }
+
