@@ -6,7 +6,7 @@ const myobject = {
 }
 
 
-//for-in loop
+//for-in loop on object
 
 for (const key in myobject) {
     console.log(`${key} is shortcut for ${myobject[key]}`);
@@ -14,3 +14,24 @@ for (const key in myobject) {
     
     
 }
+
+// for-in loop on array
+
+const myarray = ['java', 'py', 'js', 'cpp']
+
+
+// THIS WILL PRINT ONLY THE KEY ON AN ARRAY
+
+for (const key in myarray) {
+    console.log(key);
+    
+}
+
+
+// THIS WILL PRINT THE VALUE OF ARRAY AT THE SPECIFIC KEY
+
+for (const key in myarray) {
+    console.log(myarray[key]);
+    
+}
+
