@@ -29,3 +29,5 @@ myNums.forEach((num) => {
 });
 
 console.log(newNum2);
+
+
