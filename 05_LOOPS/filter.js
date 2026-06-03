@@ -31,3 +31,79 @@ myNums.forEach((num) => {
 console.log(newNum2);
 
 
+
+
+
+
+
+const books = [
+  {
+    title: "The Hobbit",
+    genre: "Fantasy",
+    edition: "3rd",
+    publishYear: 1937,
+  },
+  {
+    title: "To Kill a Mockingbird",
+    genre: "Fiction",
+    edition: "2nd",
+    publishYear: 1960,
+  },
+  {
+    title: "1984",
+    genre: "Dystopian",
+    edition: "1st",
+    publishYear: 1949,
+  },
+  {
+    title: "The Great Gatsby",
+    genre: "Classic",
+    edition: "5th",
+    publishYear: 1925,
+  },
+  {
+    title: "The Alchemist",
+    genre: "Adventure",
+    edition: "4th",
+    publishYear: 1988,
+  },
+  {
+    title: "Harry Potter and the Philosopher's Stone",
+    genre: "Fantasy",
+    edition: "7th",
+    publishYear: 1997,
+  },
+  {
+    title: "The Da Vinci Code",
+    genre: "Mystery",
+    edition: "2nd",
+    publishYear: 2003,
+  },
+  {
+    title: "Pride and Prejudice",
+    genre: "Romance",
+    edition: "6th",
+    publishYear: 1813,
+  },
+  {
+    title: "The Catcher in the Rye",
+    genre: "Fiction",
+    edition: "3rd",
+    publishYear: 1951,
+  },
+  {
+    title: "Dune",
+    genre: "Science Fiction",
+    edition: "1st",
+    publishYear: 1965,
+  },
+];
+
+const book_data = books.filter( (book) => book.publishYear > 1981 )
+
+
+
+console.log(book_data);
+
+console.log(book_data[1].title);
+
