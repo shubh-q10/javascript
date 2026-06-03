@@ -99,11 +99,11 @@ const books = [
   },
 ];
 
-const book_data = books.filter( (book) => book.publishYear > 1981 )
+const book_after_1981 = books.filter( (book) => book.publishYear > 1981 )
 
+const fiction_book = books.filter( (book) => book.genre == "Fiction" )
 
+console.log(book_after_1981);
+console.log(fiction_book);
 
-console.log(book_data);
-
-console.log(book_data[1].title);
 
