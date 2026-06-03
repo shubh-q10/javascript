@@ -50,6 +50,12 @@ const books = [
     publishYear: 1960,
   },
   {
+    title: "Rich in a town",
+    genre: "Fiction",
+    edition: "4th",
+    publishYear: 2022
+  },
+  {
     title: "1984",
     genre: "Dystopian",
     edition: "1st",
@@ -101,9 +107,16 @@ const books = [
 
 const book_after_1981 = books.filter( (book) => book.publishYear > 1981 )
 
+
 const fiction_book = books.filter( (book) => book.genre == "Fiction" )
+
+const fiction_book_after_1981 = books.filter ( (book) => book.publishYear > 1981 && book.genre === "Fiction" )
+
 
 console.log(book_after_1981);
 console.log(fiction_book);
+console.log(fiction_book_after_1981);
+
+
 
 
