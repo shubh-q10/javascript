@@ -7,7 +7,7 @@ for (const num of arr) {
   console.log(`Value of num after adding 3 is ${num + 3}`);
 }
 
-// for-of loop on string
+// for-of loop on a string
 const greetings = "Hello World";
 
 for (const greet of greetings) {
@@ -16,3 +16,5 @@ for (const greet of greetings) {
   }
   console.log(`each car is ${greet}`);
 }
+
+
