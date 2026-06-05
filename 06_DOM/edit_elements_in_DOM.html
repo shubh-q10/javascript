@@ -41,6 +41,16 @@
     newli.textContent = "mojo"
     secondlang.replaceWith(newli)
 
+    //edit: replace javascript with Typescript
+
+    const firstlang = document.querySelector('li:nth-child(1)')
+    firstlang.outerHTML = '<li>TypeScript</li>'
+
+    //remove: remove cpp
+
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+
     
 
 
