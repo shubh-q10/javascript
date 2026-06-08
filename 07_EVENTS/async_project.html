@@ -1,15 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Async JS</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Chai aur Code</h1>
-    <button id="stop">button</button>
-</body>
-<script>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    // setTimeout(() => {
+    //   console.log("Shubham Singh");
+    // }, 2000);
 
-</script>
+    const sayMyname = function () {
+      console.log("hi, i'm shubh");
+    };
+    const changetexth1 = function () {
+      document.querySelector("h1").innerHTML = "async js series";
+    };
+
+    setTimeout(sayMyname, 2000);
+    const changeme = setTimeout(changetexth1, 4000);
+
+    document.querySelector("#stop").addEventListener('click', function () {
+        clearTimeout(changeme)
+        console.log("STOPPED");
+        
+    })
+  </script>
 </html>
