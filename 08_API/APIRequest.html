@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API REQUEST</title>
+  </head>
+  <body>
+    <div class="card">
+      <img height="200px" width="200px" src="" class="image" alt="" srcset="" />
+      <p class="head"></p>
+    </div>
+  </body>
+  <script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+    xhr.onreadystatechange = function () {
+      let head = document.querySelector(".head");
+      let photo = document.querySelector(".image");
+      let userphoto;
+
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        userphoto = data.avatar_url;
+
+        head.innerHTML = data.followers;
+        photo.src = userphoto;
+        // head.innerHTML =
+      }
+    };
+    xhr.send();
+  </script>
+</html>
