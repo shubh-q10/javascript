@@ -25,7 +25,7 @@
         const data = JSON.parse(this.responseText);
         userphoto = data.avatar_url;
 
-        head.innerHTML = data.followers;
+        head.innerHTML = `total no of followers: ${data.followers}`;
         photo.src = userphoto;
         // head.innerHTML =
       }
