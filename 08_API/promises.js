@@ -104,7 +104,7 @@ async function getAllUsers() {
 }
 getAllUsers();
 
-// using .then .catch to handle api requests
+// using fetch(),  .then,  .catch  to handle api requests
 
 // API link: https://jsonplaceholder.typicode.com/users
 
