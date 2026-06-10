@@ -23,4 +23,66 @@ new Promise(function (resolve, reject) {
   console.log("Async 2 resolved");
 });
 
+// how to pass parameter from promise to .then through resolve
 
+const promiseThree = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve({ username: "chai", email: "chai@example.com" });
+  }, 1000);
+});
+
+promiseThree.then(function (user) {
+  console.log(user);
+  console.log(user["username"]);
+  console.log(user["email"]);
+});
+
+const promiseFour = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true; // switch the value between true and false and then check the console
+    if (!error) {
+      resolve({ username: "Shubham", password: "123" });
+    } else {
+      reject("ERROR: Something went wrong");
+    }
+  }, 1000);
+});
+
+// chaining using .then
+
+promiseFour
+  .then((user) => {
+    console.log(user);
+    return user.username;
+  })
+  .then((username) => {
+    console.log(username);
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .finally(function () {
+    console.log("The promise is either resolved or rejected");
+  });
+
+const promiseFive = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true;
+    if (!error) {
+      resolve({ username: "javascript", password: "1we45" });
+    } else {
+      reject("ERROR: JS went wrong");
+    }
+  }, 1000);
+});
+
+async function consumepromiseFive() {
+  try {
+    const response = await promiseFive;
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+consumepromiseFive();
