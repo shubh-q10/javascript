@@ -86,3 +86,23 @@ async function consumepromiseFive() {
 }
 
 consumepromiseFive();
+
+// using async/await to handle api requests
+
+// API link: https://jsonplaceholder.typicode.com/users
+
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    console.log(typeof response);
+    console.log("response datatype is printed");
+    const data = await response.json();
+    console.log("this is the first user:", data[0]);
+  } catch (error) {
+    console.log("ERROR: ", error);
+    
+  }
+}
+getAllUsers();
+
+
