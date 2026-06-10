@@ -100,9 +100,6 @@ async function getAllUsers() {
     console.log("this is the first user:", data[0]);
   } catch (error) {
     console.log("ERROR: ", error);
-    
   }
 }
 getAllUsers();
-
-
