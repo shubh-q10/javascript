@@ -87,7 +87,7 @@ async function consumepromiseFive() {
 
 consumepromiseFive();
 
-// using async/await to handle api requests
+// using async/await and try/catch to handle api requests
 
 // API link: https://jsonplaceholder.typicode.com/users
 
@@ -103,3 +103,18 @@ async function getAllUsers() {
   }
 }
 getAllUsers();
+
+// using .then .catch to handle api requests
+
+// API link: https://jsonplaceholder.typicode.com/users
+
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log("this is the second data:", data[1]);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
