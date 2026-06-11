@@ -13,10 +13,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     console.log(error);
   });
 
-
-
 // getting data from Hitesh Choudhary github API
-
 
 fetch("https://api.github.com/users/hiteshchoudhary")
   .then((response) => {
