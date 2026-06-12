@@ -16,10 +16,11 @@ console.log(multiplyBy5.prototype);
 function createUser(username, score) {
     this.username = username
     this.score = score
+
 }
 
 createUser.prototype.increment = function () {
-    this.score++
+    return this.score++
 }
 
 createUser.prototype.printMe = function () {
@@ -27,11 +28,16 @@ createUser.prototype.printMe = function () {
     
 }
 
-const user1 = createUser("ankit", 45)
-const user2 = createUser("abhay", 450)
+const user1 = new createUser("ankit", 45)
+const user2 = new createUser("abhay", 450)
 
-console.log(user1);
-console.log(user2);
+user1.printMe()
+user1.increment()
+
+user2.printMe()
+user2.increment()
+
+
 
 
 
