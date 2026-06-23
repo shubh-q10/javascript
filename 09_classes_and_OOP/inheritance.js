@@ -36,6 +36,7 @@ String.prototype.trueLength = function () {
 // NOW WE CAN USE THIS METHOD ON ANY STRING
 // here trueLength method is removing the whitespaces and then telling the length of the string
 
+
 user1.trueLength()
 'hiteshchoudhary     '.trueLength()
 "icetea".trueLength()
