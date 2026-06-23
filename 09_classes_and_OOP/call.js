@@ -10,6 +10,7 @@ function createUser(username, email, password) {
 
 }
 
+
 const user1 = new createUser("shubh", 'shubh@gmail.com', "123dghie")
 
 console.log(user1);
